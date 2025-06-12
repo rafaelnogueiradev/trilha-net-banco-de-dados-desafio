@@ -22,8 +22,8 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 SELECT Ano, COUNT(Ano) AS Quantidade FROM Filmes GROUP BY Ano ORDER BY Quantidade DESC
 
 -- 8. Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
--- Foi retornado todos os dados dos Atores, seguindo a imagem que representa o objetivo
-SELECT * FROM Atores
+-- Foi retornado todos os dados dos Atores do genero M, seguindo a imagem que representa o objetivo
+SELECT * FROM Atores WHERE Genero = 'M'
 
 -- 9. Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
 -- Foi retornado todos os dados dos Atores com o genero F, ordenado pelo PrimeiroNome, seguindo a imagem que representa o objetivo
